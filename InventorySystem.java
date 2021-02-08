@@ -1,4 +1,3 @@
-package com.inventering;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -47,15 +46,10 @@ public class InventorySystem {
                     System.out.print("Skriv in frukt:");
                     fruitsList.addfruitItem(scanner.nextLine());
 
-
-
                     System.out.print("Skriv in grönsak:");
                     vegetablesList.addVegetableItem(scanner.nextLine());
 
                     vegetablesList.addVegetableItem(scanner.nextLine());
-
-
-
 
                     break;
                 case 3:
