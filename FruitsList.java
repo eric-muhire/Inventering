@@ -1,4 +1,4 @@
-package com.inventering;
+
 import java.util.ArrayList;
 
 public class FruitsList {

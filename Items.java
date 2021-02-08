@@ -1,4 +1,4 @@
-package com.inventering;
+
 import java.util.Scanner;
 public class Items {
     public static FruitsList fruitsList=new FruitsList();
