@@ -1,21 +1,19 @@
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class InventorySystem {
-    public ArrayList<String> fruitsList = new ArrayList<>();
+    public static FruitsList fruitsList = new FruitsList();
     public static Scanner scanner = new Scanner(System.in);
-
+    public static Items items = new Items();
+    public static VegetablesList vegetablesList = new VegetablesList();
 
     public static void main(String[] args) {
-        Items items = new Items();
-        FruitsList fruitsList = new FruitsList();
-        VegetablesList vegetablesList = new VegetablesList();
 
         ///Inventory System
         boolean runProgram = true;
         int choice = 0;
-        printInstructions();//Startar menu
+        items.printInstructions();//Startar menu
         System.out.println(" ");
         while (runProgram) {
 
@@ -35,21 +33,29 @@ public class InventorySystem {
             scanner.nextLine();
             switch (choice) {
                 case 0:
-                    printInstructions();
+                    items.printInstructions();
                     break;
-                case 1:
-                    fruitsList.printfruitList();
-                    scanner.nextLine();
+                case 1:                                 //Skriva ut listan
+                   fruitsList.printfruitList();
+
                     vegetablesList.printVegetableList();
+
                     break;
                 case 2:
-                    System.out.print("Skriv in frukt:");
+                    items.addFruitItem();
+                   // System.out.println("Skriv in frukt");
+                    //fruitsList.addfruitItem(scanner.nextLine());
+                    items.addVegetableItem();
+
+                    /*System.out.println("Skriv in frukt");
+
+                    fruitsList.addfruitItem(scanner.nextLine());
                     fruitsList.addfruitItem(scanner.nextLine());
 
-                    System.out.print("Skriv in grönsak:");
+                    System.out.println("Skriv in grönsak");
                     vegetablesList.addVegetableItem(scanner.nextLine());
 
-                    vegetablesList.addVegetableItem(scanner.nextLine());
+                    vegetablesList.addVegetableItem(scanner.nextLine());*/
 
                     break;
                 case 3:
@@ -60,7 +66,8 @@ public class InventorySystem {
                     items.removeItem();
                     break;
                 case 5:
-                    items.searchForItem();
+
+                    Items.searchForItem();
                     break;
                 case 6:
                     runProgram = false;
@@ -70,12 +77,11 @@ public class InventorySystem {
         }
 
     }
-
-    //metod för att skriva ut menulistan
-   static void printInstructions() {
-
-    }
 }
+
+
+
+
 
 
 

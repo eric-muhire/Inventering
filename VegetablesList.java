@@ -1,9 +1,9 @@
 
-
 import java.util.ArrayList;
 
-public class VegetablesList  {
+public class VegetablesList extends FruitsList {
     public ArrayList<String> vegetablesList=new ArrayList<>();
+
     public void addVegetableItem(String item) {
        vegetablesList.add(item);
     }
@@ -15,12 +15,12 @@ public class VegetablesList  {
         }
     }
 
-    public void modifyfruitList(int position, String newItem){
+    public void modifyVegetableList(int position, String newItem){
         vegetablesList.set(position,newItem);
         System.out.println("frukt list"+(position)+ "har ändrat");
 
     }
-    public void removefruitList(int position){
+    public void removeVgetableLsit(int position){
         String theItem=vegetablesList.get(position);
         vegetablesList.remove(position);
     }

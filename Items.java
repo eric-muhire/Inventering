@@ -4,11 +4,18 @@ public class Items {
     public static FruitsList fruitsList=new FruitsList();
     public static VegetablesList vegetablesList=new VegetablesList();
     public static Scanner scanner=new Scanner(System.in);
-    public static void addfruitItem() {
-        System.out.println("Skriv in din vara");
+
+    public static void printInstructions(){     //metod för att skriva ut varor
+
+    }
+
+    public static void addFruitItem() {
+        System.out.println("Skriv in din frukt");
+        fruitsList.addfruitItem(scanner.nextLine());
     }
         public static void addVegetableItem(){
-            System.out.println("Skriv in din vara");
+            System.out.println("Skriv in din grönsak");
+            vegetablesList.addVegetableItem(scanner.nextLine());
 
         }
 
@@ -31,13 +38,15 @@ public class Items {
         System.out.println("Vara att leta efter ");
         String searchItem=scanner.nextLine();
         if (fruitsList.findItem(searchItem)!=null) {
-            System.out.println("found" + searchItem + " i listan med vara");
+            System.out.println("Hittade " + searchItem + " i listan med vara");
+        }else if(vegetablesList.findItem(searchItem)!=null){
+            System.out.println("Hittade "+ searchItem + " i listan med vara");
 
         }else{
-            System.out.println(searchItem + "vara är inte med i listan");
+            System.out.println(searchItem + " vara är inte med i listan");
         }
     }
 
 
-    }
+}
 
