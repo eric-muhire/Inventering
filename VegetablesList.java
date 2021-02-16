@@ -1,10 +1,10 @@
 
 import java.util.ArrayList;
 
-public class VegetablesList extends FruitsList {
-    public ArrayList<String> vegetablesList=new ArrayList<>();
+public class VegetablesList {
+    public static ArrayList<String> vegetablesList=new ArrayList<>();
 
-    public void addVegetableItem(String item) {
+    public static void addVegetableItem(String item) {
        vegetablesList.add(item);
     }
 

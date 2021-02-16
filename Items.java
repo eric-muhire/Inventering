@@ -5,8 +5,9 @@ public class Items {
     public static VegetablesList vegetablesList=new VegetablesList();
     public static Scanner scanner=new Scanner(System.in);
 
-    public static void printInstructions(){     //metod för att skriva ut varor
+    public static void printInstructions() {
 
+            //metod för att skriva ut
     }
 
     public static void addFruitItem() {
@@ -38,9 +39,9 @@ public class Items {
         System.out.println("Vara att leta efter ");
         String searchItem=scanner.nextLine();
         if (fruitsList.findItem(searchItem)!=null) {
-            System.out.println("Hittade " + searchItem + " i listan med vara");
+            System.out.println(searchItem +", hittades " + " i listan med varor");
         }else if(vegetablesList.findItem(searchItem)!=null){
-            System.out.println("Hittade "+ searchItem + " i listan med vara");
+            System.out.println(searchItem +", hittades " + " i listan med varor");
 
         }else{
             System.out.println(searchItem + " vara är inte med i listan");
