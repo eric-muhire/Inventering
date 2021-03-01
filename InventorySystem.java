@@ -1,17 +1,18 @@
 
+
 import java.util.Scanner;
 
 public class InventorySystem {
 
     public static void main(String[] args) {
-        FruitsList fruitsList = new FruitsList();
+      FruitsList fruitsList = new FruitsList();
         VegetablesList vegetablesList = new VegetablesList();
         Items items = new Items();
-        Scanner scanner = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
 
             ///Inventory System
             boolean runProgram = true;
-            int choice = 0;
+            int choice;
 
 
             System.out.println(" ");
@@ -29,13 +30,13 @@ public class InventorySystem {
                         "\nAnge 5 Leta efter en vara" +
                         "\nAnge 6 Avsluta programmet");
 
-                choice = scanner.nextInt();
-                scanner.nextLine();
+                choice = Input.nextInt();
+                Input.nextLine();
                 switch (choice) {
                     case 0:
                         items.printInstructions();
                         break;
-                    case 1:                                 //Skriva ut listan
+                    case 1:
 
                         fruitsList.printfruitList();
 
@@ -43,24 +44,15 @@ public class InventorySystem {
 
                         break;
                     case 2:
+
                         items.addFruitItem();
-                        // System.out.println("Skriv in frukt");
-                        //fruitsList.addfruitItem(scanner.nextLine());
+
                         items.addVegetableItem();
-
-                    /*System.out.println("Skriv in frukt");
-
-                    fruitsList.addfruitItem(scanner.nextLine());
-                    fruitsList.addfruitItem(scanner.nextLine());
-
-                    System.out.println("Skriv in grönsak");
-                    vegetablesList.addVegetableItem(scanner.nextLine());
-
-                    vegetablesList.addVegetableItem(scanner.nextLine());*/
 
                         break;
                     case 3:
-                        items.modifyItem();
+                        items.modifyFruit();
+                        items.modifyVegetable();
 
                         break;
                     case 4:
@@ -73,8 +65,14 @@ public class InventorySystem {
                     case 6:
                         runProgram = false;
                         break;
+                    default:
+                        System.out.println("Error:fel val.");
+                        break;
+
+
 
                 }
+
             }
 
         }
