@@ -11,9 +11,8 @@ public class VegetablesList {
     public void printVegetableList() {
         System.out.println("Du har " + vegetablesList.size() + " Grönsaker i din listan");
         for (int i = 0; i < vegetablesList.size(); i++) {
-            System.out.println( vegetablesList.get(i));
-          //  String answer ="";
-            //if  (isDigit(answer)==false);
+     System.out.println((i + 1) + "." + vegetablesList.get(i));
+          
 
             }
         }
