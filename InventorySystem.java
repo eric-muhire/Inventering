@@ -7,7 +7,7 @@ public class InventorySystem {
     public static void main(String[] args) {
       FruitsList fruitsList = new FruitsList();
         VegetablesList vegetablesList = new VegetablesList();
-        Items items = new Items();
+        Items display = new Items();
         Scanner Input = new Scanner(System.in);
 
             ///Inventory System
@@ -34,7 +34,7 @@ public class InventorySystem {
                 Input.nextLine();
                 switch (choice) {
                     case 0:
-                        items.printInstructions();
+                        display.printInstructions();
                         break;
                     case 1:
 
@@ -45,18 +45,19 @@ public class InventorySystem {
                         break;
                     case 2:
 
-                        items.addFruitItem();
+                        display.addFruitItem();
 
-                        items.addVegetableItem();
+
+                        display.addVegetableItem();
 
                         break;
                     case 3:
-                        items.modifyFruit();
-                        items.modifyVegetable();
+                        display.modifyFruit();
+                        display.modifyVegetable();
 
                         break;
                     case 4:
-                        items.removeItem();
+                        display.removeItem();
                         break;
                     case 5:
 

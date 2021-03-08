@@ -10,7 +10,7 @@ public class Items {
     public void printInstructions() {
 
     }
-    //metod för att lägga till en frukt
+    //metod för att få input från användare gällande registrering av frukter
     public static void addFruitItem() {
         System.out.println("Skriv in din frukt");
         fruitsList.addfruitItem(Input.nextLine());
@@ -18,7 +18,7 @@ public class Items {
     }
 
 
-    //method att lägga till grönsaker
+    //metod för att få input från användare gällande registrering av grönsaker
     public static void addVegetableItem() {
         System.out.println("Skriv in din grönsak");
         vegetablesList.addVegetableItem(Input.nextLine());
