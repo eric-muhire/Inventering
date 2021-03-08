@@ -7,7 +7,7 @@ public class InventorySystem {
     public static void main(String[] args) {
       FruitsList fruitsList = new FruitsList();
         VegetablesList vegetablesList = new VegetablesList();
-        Display display = new Display();
+        Items display = new Items();
         Scanner Input = new Scanner(System.in);
 
             ///Inventory System
@@ -61,7 +61,7 @@ public class InventorySystem {
                         break;
                     case 5:
 
-                        Display.searchForItem();
+                        Items.searchForItem();
                         break;
                     case 6:
                         runProgram = false;

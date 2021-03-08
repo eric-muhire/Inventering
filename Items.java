@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class Display {
+public class Items {
     static FruitsList fruitsList = new FruitsList();
     public static VegetablesList vegetablesList = new VegetablesList();
     public static Scanner Input = new Scanner(System.in);
