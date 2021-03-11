@@ -17,7 +17,7 @@ throughout the course and try to use them in the project.
 
 **Built with** [Intellij](https://www.jetbrains.com/idea/)
 
-**Other documents**[Google doc](https://docs.google.com/document/d/16UvxtpxdhrQu1JtmLgi_E_zMakSLF3v2un5jDruPQMg/edit#heading=h.35jxxq4vr0a6)
+**Other documents** [Google doc](https://docs.google.com/document/d/16UvxtpxdhrQu1JtmLgi_E_zMakSLF3v2un5jDruPQMg/edit#heading=h.35jxxq4vr0a6)
 
 ------------------------
 
