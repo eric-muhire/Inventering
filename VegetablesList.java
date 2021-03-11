@@ -20,7 +20,7 @@ public class VegetablesList {
         System.out.println(" grönsak list "+(position)+ " har ändrat");
 
     }
-    public void removeVgetableLsit(int position){
+    public void removeItemVegetableList(int position){
         vegetablesList.get(position);
         vegetablesList.remove(position);
     }

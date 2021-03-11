@@ -54,8 +54,8 @@ public class Items {
         System.out.println("Skriv in vara nr");
         int itemNo= Input.nextInt();
         Input.nextLine();
-        fruitsList.removefruitList(itemNo -1);
-        vegetablesList.removeVgetableLsit(itemNo -1);
+        fruitsList.removeItemFruitList(itemNo -1);
+        vegetablesList.removeItemVegetableList(itemNo -1);
     }
     public static void searchForItem(){
         System.out.println("Vara att leta efter ");

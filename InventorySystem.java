@@ -1,7 +1,5 @@
 
-
 import java.util.Scanner;
-
 public class InventorySystem {
 
     public static void main(String[] args) {
@@ -13,7 +11,6 @@ public class InventorySystem {
             ///Inventory System
             boolean runProgram = true;
             int choice;
-
 
             System.out.println(" ");
             while (runProgram) {
@@ -44,9 +41,7 @@ public class InventorySystem {
 
                         break;
                     case 2:
-
                         display.addFruitItem();
-
 
                         display.addVegetableItem();
 
@@ -54,13 +49,11 @@ public class InventorySystem {
                     case 3:
                         display.modifyFruit();
                         display.modifyVegetable();
-
                         break;
                     case 4:
                         display.removeItem();
                         break;
                     case 5:
-
                         Items.searchForItem();
                         break;
                     case 6:
@@ -69,16 +62,9 @@ public class InventorySystem {
                     default:
                         System.out.println("Error:fel val.");
                         break;
-
-
-
                 }
-
             }
-
         }
-
-
     }
 
 
