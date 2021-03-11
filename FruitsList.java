@@ -1,7 +1,5 @@
 
 import java.util.ArrayList;
-
-
 public class FruitsList {
     static ArrayList<String> fruitsList = new ArrayList<>();
 
@@ -24,7 +22,7 @@ public class FruitsList {
             System.out.println("frukt list " + (position) + " har ändrat");
         }
     //method för att ta bort en vara i Array
-        public void removefruitList ( int position){
+        public void removeItemFruitList(int position){
          fruitsList.get(position);
             fruitsList.remove(position);
 
