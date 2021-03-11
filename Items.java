@@ -33,10 +33,8 @@ public class Items {
         Input.nextLine();
         System.out.println("Skriv in ersättninsvara");
         String newItem = Input.nextLine();
-
         vegetablesList.modifyVegetableList(itemNo - 1, newItem);
     }
-
     public static void removeItem(){
         System.out.println("Skriv in vara nr");
         int itemNo= Input.nextInt();

@@ -30,17 +30,12 @@ public class InventorySystem {
                         display.printInstructions();
                         break;
                     case 1:
-
                         fruitsList.printfruitList();
-
                         vegetablesList.printVegetableList();
-
                         break;
                     case 2:
                         display.addFruitItem();
-
                         display.addVegetableItem();
-
                         break;
                     case 3:
                         display.modifyFruit();
