@@ -2,11 +2,9 @@
 import java.util.ArrayList;
 public class FruitsList {
     static ArrayList<String> fruitsList = new ArrayList<>();
-
     //metod för att lägga till en frukt
     public void addfruitItem(String item) {
        fruitsList.add(item);
-
     }
     //method för att spara in frukt in i Array
     public void printfruitList() {
@@ -14,7 +12,6 @@ public class FruitsList {
             for (int i = 0; i < fruitsList.size(); i++) {
                 System.out.println((i + 1) + "." + fruitsList.get(i));
             }
-
         }
     //method för att modifiera Array
     public void modifyfruitList ( int position, String newItem){
@@ -25,7 +22,6 @@ public class FruitsList {
         public void removeItemFruitList(int position){
          fruitsList.get(position);
             fruitsList.remove(position);
-
         }
     //method för att hitta frukt i Array
         public String findItem (String searchItem){

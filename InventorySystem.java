@@ -7,17 +7,13 @@ public class InventorySystem {
         VegetablesList vegetablesList = new VegetablesList();
         Items display = new Items();
         Scanner Input = new Scanner(System.in);
-
             ///Inventory System
             boolean runProgram = true;
             int choice;
-
             System.out.println(" ");
             while (runProgram) {
-
                 System.out.println("Var god och välj alternativ:");
                 System.out.println("============================");
-
                 //Menulistan
                 System.out.println("Ange 0 Huvud Meny" +
                         "\nAnge 1 Skriv ut listan på varorna" +

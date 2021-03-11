@@ -1,4 +1,5 @@
-#Inventering
+# Inventering
+
 This is an Inventory readme file for our GitHub repository.
 The project is about a console application for adding items from user, such as fruits or vegetables.
 The goal for this application is to help the user to keep track of items in the stock.
