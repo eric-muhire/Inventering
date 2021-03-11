@@ -5,10 +5,8 @@ public class Items {
     public static VegetablesList vegetablesList = new VegetablesList();
     public static Scanner Input = new Scanner(System.in);
 
-
     //metod för att skriva ut
     public void printInstructions() {
-
     }
     //metod för att få input från användare gällande registrering av frukter
     public static void addFruitItem() {
@@ -16,17 +14,11 @@ public class Items {
         fruitsList.addfruitItem(Input.nextLine());
 
     }
-
-
     //metod för att få input från användare gällande registrering av grönsaker
     public static void addVegetableItem() {
         System.out.println("Skriv in din grönsak");
         vegetablesList.addVegetableItem(Input.nextLine());
-
-
     }
-
-
     public static void modifyFruit() {
         System.out.println("Skriv in vara nr");
         int itemNo = Input.nextInt();
@@ -34,10 +26,7 @@ public class Items {
         System.out.println("Skriv in ersättninsvara");
         String newItem = Input.nextLine();
         fruitsList.modifyfruitList(itemNo - 1, newItem);
-
     }
-
-
     public static void modifyVegetable() {
         System.out.println("Skriv in vara nr");
         int itemNo = Input.nextInt();
@@ -47,8 +36,6 @@ public class Items {
 
         vegetablesList.modifyVegetableList(itemNo - 1, newItem);
     }
-
-
 
     public static void removeItem(){
         System.out.println("Skriv in vara nr");
@@ -69,7 +56,5 @@ public class Items {
             System.out.println(searchItem + " vara är inte med i listan");
         }
     }
-
-
 }
 
