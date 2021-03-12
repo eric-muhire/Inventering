@@ -7,7 +7,7 @@ The goal for this application is to help the user to keep track of items in the 
 -------------------------
 ## Motivation
 
-We are the class of 2022 Cloud developer AWS. The subject is OOP programming in Java.
+We are the class of 2022 Cloud developer AWS. The subject is OOP (Object-Oriented programming) in Java.
 The purpose of this project is to learn how to implement the different tools that we've learnt 
 throughout the course and try to use them in the project.
 

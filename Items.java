@@ -6,13 +6,12 @@ public class Items {
     public static Scanner Input = new Scanner(System.in);
 
     //metod för att skriva ut
-    public void printInstructions() {
-    }
+    public void printInstructions() { }
+
     //metod för att få input från användare gällande registrering av frukter
     public static void addFruitItem() {
         System.out.println("Skriv in din frukt");
         fruitsList.addfruitItem(Input.nextLine());
-
     }
     //metod för att få input från användare gällande registrering av grönsaker
     public static void addVegetableItem() {
